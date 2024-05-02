@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./navLink";
-import EmailIcon from "./emaiIcon";
 import { motion } from "framer-motion";
+import EmailIcon from "./emaiIcon";
 
 const links = [
   { url: "/", title: "Home" },
@@ -15,6 +15,7 @@ const links = [
 ];
 
 const Navbar = () => {
+//   console.log("Menu button clicked");
   const [open, setOpen] = useState(false);
 
   const topVariants = {
@@ -23,7 +24,7 @@ const Navbar = () => {
     },
     opened: {
       rotate: 45,
-      backgroundColor: "rgb(255, 255,255)",
+      backgroundColor: "rgb(255,255,255)",
     },
   };
   const centerVariants = {
@@ -41,7 +42,7 @@ const Navbar = () => {
     },
     opened: {
       rotate: -45,
-      backgroundColor: "rgb(255, 255,255)",
+      backgroundColor: "rgb(255,255,255)",
     },
   };
 
@@ -70,34 +71,20 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px48 text-xl">
+    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* links */}
-      <div className="hidden md:flex text-white gap-4 w-1/3">
+      <div className="hidden md:flex gap-4 w-1/3 text-white">
         {links.map((link) => (
-          <NavLink link={link} key={link.url} />
+          <NavLink link={link} key={link.title} />
         ))}
       </div>
       {/* socials */}
       <div className="hidden md:flex gap-4  ">
         <Link href="https://github.com/technomad01">
-          <Image
-            src="/github.png"
-            width={24}
-            height={24}
-            alt=""
-            className="w-auto h-auto"
-            priority
-          />
+          <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
         <Link href="https://www.linkedin.com/in/claudia-e/">
-          <Image
-            src="/linkedin.png"
-            width={24}
-            height={24}
-            alt=""
-            className="w-auto h-auto"
-            priority
-          />
+          <Image src="/linkedin.png" width={24} height={24} alt="" />
         </Link>
         <EmailIcon />
       </div>
@@ -113,13 +100,11 @@ const Navbar = () => {
             animate={open ? "opened" : "closed"}
             className="w-10 h-1 bg-white rounded origin-left"
           ></motion.div>
-
           <motion.div
             variants={centerVariants}
             animate={open ? "opened" : "closed"}
             className="w-10 h-1 bg-white rounded"
           ></motion.div>
-
           <motion.div
             variants={bottomVariants}
             animate={open ? "opened" : "closed"}

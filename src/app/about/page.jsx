@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const AboutPage = () => {
+const Page = () => {
   return (
     <motion.div
       className="h-full"
@@ -111,4 +111,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default Page;

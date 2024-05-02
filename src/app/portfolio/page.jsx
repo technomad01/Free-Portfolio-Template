@@ -10,7 +10,7 @@ const projects = [
     desc: "This is a bookshelf app that has crud functionalities for books. Users can add new books as well as update and delete. It uses simple UI but also eye catching.",
     img: "/projects/bookshelf.png/",
     gitUrl: "/https://github.com/technomad01/the-bookshelf",
-    // previewUrl: "/",
+    previewUrl: "/",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = [
     desc: "A mock Facebook app using the same design principles as the original creators. It is implemented with dark mode functionality as well as a user auth system.",
     img: "/projects/mingle.png",
     gitUrl: "https://github.com/technomad01/mingle-app",
-    // previewUrl: "/",
+    previewUrl: "/",
   },
   {
     id: 4,
@@ -42,19 +42,19 @@ const projects = [
     desc: "This is a travel app. Allows registered users find activities, touristic spots and eateries in the selected travel destination. Also has a daily planner for user to create a vacation plan based on the recommended sights.",
     img: "",
     gitUrl: "https://github.com/technomad01/travel-app-main",
-    // previewUrl: "/",
+    previewUrl: "/",
   },
   {
     id: 6,
     title: "Portfolio Site",
-    desc: "A webiste built for an client to publish and sell their ebooks and other projects",
+    desc: "A webiste built for a client to publish and sell ebooks ,merch, games and other projects.",
     img: "/projects/K-portfolio.png",
     gitUrl: "/",
     previewUrl: "/",
   },
 ];
 
-const PortfolioPage = () => {
+const Page = () => {
   return (
     <motion.div
       className="h-full"
@@ -88,4 +88,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default Page;
