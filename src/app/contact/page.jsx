@@ -72,7 +72,7 @@ const Page = () => {
               htmlFor="email"
               className="text-white block mb-2 text-sm font-medium"
             >
-              Your E-mail
+              Your e-mail
             </label>
             <input
               name="user_email"

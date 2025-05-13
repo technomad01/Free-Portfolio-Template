@@ -44,14 +44,14 @@ const projects = [
     gitUrl: "/",
     previewUrl: "/",
   },
-  //   {
-  //     id: 5,
-  //     title: "Travel App",
-  //     desc: "This is a travel app. Allows registered users find activities, touristic spots and eateries in the selected travel destination. Also has a daily planner for user to create a vacation plan based on the recommended sights.",
-  //     img: "",
-  //     gitUrl: "https://github.com/technomad01/travel-app-main",
-  //     previewUrl: "/",
-  //   },
+    {
+      id: 5,
+      title: "Travel App",
+      desc: "This is a travel app. Allows registered users find activities, touristic spots and eateries in the selected travel destination. Also has a daily planner for user to create a vacation plan based on the recommended sights.",
+      img: "",
+      gitUrl: "https://github.com/technomad01/travel-app-main",
+      previewUrl: "/",
+    },e 
 ];
 
 const Page = () => {

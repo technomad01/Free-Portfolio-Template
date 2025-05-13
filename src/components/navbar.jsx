@@ -15,7 +15,6 @@ const links = [
 ];
 
 const Navbar = () => {
-//   console.log("Menu button clicked");
   const [open, setOpen] = useState(false);
 
   const topVariants = {
@@ -70,8 +69,15 @@ const Navbar = () => {
     },
   };
 
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
+
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+    <div
+      className="h-full flex items-center justify-between px-4 sm:px-8 
+md:px-12 lg:px-20 xl:px-48 text-xl"
+    >
       {/* links */}
       <div className="hidden md:flex gap-4 w-1/3 text-white">
         {links.map((link) => (
@@ -81,10 +87,10 @@ const Navbar = () => {
       {/* socials */}
       <div className="hidden md:flex gap-4  ">
         <Link href="https://github.com/technomad01">
-          <Image src="/github.png" alt="" width={24} height={24} />
+          <Image src="/github.png" alt="GitHub" width={24} height={24} />
         </Link>
         <Link href="https://www.linkedin.com/in/claudia-e/">
-          <Image src="/linkedin.png" width={24} height={24} alt="" />
+          <Image src="/linkedin.png" width={24} height={24} alt="LinkedIn" />
         </Link>
         <EmailIcon />
       </div>
@@ -117,15 +123,15 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
+            className="absolute top-0 left-0 w-screen h-screen bg-black 
+text-white flex flex-col items-center justify-center gap-8 text-4xl 
+z-40"
           >
             {links.map((link) => (
-              <motion.div
-                variants={listItemVariants}
-                className=""
-                key={link.title}
-              >
-                <Link href={link.url}>{link.title}</Link>
+              <motion.div variants={listItemVariants} key={link.title}>
+                <Link href={link.url} onClick={handleLinkClick}>
+                  {link.title}
+                </Link>
               </motion.div>
             ))}
           </motion.div>
