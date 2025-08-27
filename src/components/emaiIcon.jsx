@@ -13,7 +13,7 @@ const EmailIcon = () => {
 
   return (
     <div onClick={handleClick}>
-      <Image src="/envelope.png" alt="" width={26} height={26} />
+      <Image src="/icons/envelope.png" alt="" width={26} height={26} />
     </div>
   );
 };

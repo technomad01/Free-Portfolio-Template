@@ -74,10 +74,7 @@ const Navbar = () => {
   };
 
   return (
-    <div
-      className="h-full flex items-center justify-between px-4 sm:px-8 
-md:px-12 lg:px-20 xl:px-48 text-xl"
-    >
+    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* links */}
       <div className="hidden md:flex gap-4 w-1/3 text-white">
         {links.map((link) => (
@@ -85,12 +82,17 @@ md:px-12 lg:px-20 xl:px-48 text-xl"
         ))}
       </div>
       {/* socials */}
-      <div className="hidden md:flex gap-4  ">
-        <Link href="https://github.com/technomad01">
-          <Image src="/github.png" alt="GitHub" width={24} height={24} />
+      <div className="hidden md:flex gap-4 cursor-pointer">
+        <Link href="https://github.com/">
+          <Image src="/icons/github.png" alt="GitHub" width={24} height={24} />
         </Link>
-        <Link href="https://www.linkedin.com/in/claudia-e/">
-          <Image src="/linkedin.png" width={24} height={24} alt="LinkedIn" />
+        <Link href="https://www.linkedin.com/">
+          <Image
+            src="/icons/linkedin.png"
+            width={24}
+            height={24}
+            alt="LinkedIn"
+          />
         </Link>
         <EmailIcon />
       </div>
@@ -124,8 +126,7 @@ md:px-12 lg:px-20 xl:px-48 text-xl"
             initial="closed"
             animate="opened"
             className="absolute top-0 left-0 w-screen h-screen bg-black 
-text-white flex flex-col items-center justify-center gap-8 text-4xl 
-z-40"
+            text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
           >
             {links.map((link) => (
               <motion.div variants={listItemVariants} key={link.title}>

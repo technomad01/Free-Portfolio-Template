@@ -26,24 +26,21 @@ const Page = () => {
             </motion.h1>
 
             <p className="text-l">
-              Back in 2020 I decided to venture into the world of code in my
-              free time and fell in head first into the rabbit hole of coding. I
-              learned to create landing pages and work on some animation with
-              HTML and CSS and Javascript. In 2022 I had the opportunity to dive
-              right in and joined General Assembly and got my certification In
-              Software Engineering.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae quia aliquam, velit fugiat eveniet provident mollitia
+              dolor corrupti, veritatis tenetur repellat esse molestias
+              aspernatur aut eaque, quae in molestiae ipsa?
               <br />
               <br />
-              Fast forward to today and I’ve had the opportunity to build
-              websites for several clients and friends. I'm always eager to
-              expand my skill set and tackle new horizons. Ready for the next
-              challenge and eager to see where the ever-evolving world of tech
-              takes me.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+              impedit, qui aperiam saepe ducimus nisi inventore aliquid amet
+              unde cum omnis vitae? Harum voluptatem nisi maiores, iusto illum
+              cumque omnis.
               <br />
-              <br />
-              When I'm not writing code, i'm exploring the latest development
-              trends in tech or solving puzzle games. Thanks for joining me on
-              this journey!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              inventore rerum numquam esse rem ipsa sed atque eius nisi minus
+              odio, eligendi nemo ducimus, nam laudantium sunt similique
+              excepturi voluptatum?
             </p>
           </div>
           {/* Skills */}
@@ -104,7 +101,6 @@ const Page = () => {
               </div>
             </div>
           </div>
-          {/* experience */}
         </div>
       </div>
     </motion.div>

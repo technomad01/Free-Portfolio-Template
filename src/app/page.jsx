@@ -32,34 +32,29 @@ const Homepage = () => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Hello, I'm Claudia")
+                  .typeString("Hello, I'm Jane Doe")
                   .callFunction(() => {
-                    // console.log(" String typed out!");
                   })
                   .pauseFor(3500)
                   .deleteAll()
                   .callFunction(() => {
-                    // console.log("All string deleted");
                   })
                   .start()
                   .changeDelay(50) // Change typing speed (optional)
                   .deleteAll()
-                  .callFunction(() => {
-                    // console.log("All string deleted");
+                  .callFunction(() => {           
                   })
                   .start();
               }}
               options={{
-                loop: true, // Set loop to true for continuous looping
+                loop: true, 
               }}
             />
           </div>
 
           {/* desc */}
           <p className="md:text-xl text-white">
-            I'm a front-end developer with a base in Kuala Lumpur and Kuwait. I
-            am passionate about building interactive applications that are
-            accesible, user friendly and visually pleasing.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem, neque quis possimus at maxime, repellat dignissimos magni quibusdam explicabo sit beatae iste. Quibusdam provident modi molestias cupiditate laboriosam quae!
           </p>
           {/* buttons */}
           <div className="w-full flex gap-4">
